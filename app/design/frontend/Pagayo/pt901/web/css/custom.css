@@ -1,0 +1,16 @@
+
+/* 
+    Created on : Nov 11, 2017, 5:00:37 PM
+    Author     : trongthang
+*/
+body.page-products .block.block-compare,
+body.account .block.block-compare{
+    display: none;
+}
+#block-summary{
+    display: block !important;
+}
+#block-shipping .title,
+#block-shipping #shipping-zip-form{
+    display: none;
+}

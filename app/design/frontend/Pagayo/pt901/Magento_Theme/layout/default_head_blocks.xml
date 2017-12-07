@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2013-2017 Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+        <css src="css/font-awesome.css"/>
+        <css src="css/bootstrap.css" order="99"/>
+        <css src="css/bootstrap-theme.css" order="99"/>
+        <css src="css/pt900.css" order="90"/>
+        <css src="css/pt901.css" order="100"/>
+        <css src="css/custom.css" order="110"/>
+        <script src="js/pagayo.js"></script>
+        <script src="js/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+    </head>
+</page>

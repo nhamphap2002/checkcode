@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2013-2017 Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="header.panel">
+            <block class="Magento\Framework\View\Element\Html\Links" name="header.links">
+                <arguments>
+                    <argument name="css_class" xsi:type="string">header links</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+        <referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_img_width" xsi:type="number">148</argument>
+                <argument name="logo_img_height" xsi:type="number">43</argument>
+            </arguments>
+        </referenceBlock>
+        <referenceBlock name="report.bugs" remove="true"/>
+        <referenceContainer name="footer">
+            <block class="Magento\Store\Block\Switcher" name="store_switcher" as="store_switcher" after="footer_links" />
+        </referenceContainer>
+        <move element="store_switcher" destination="header-wrapper" after="top.links" />
+     	<move element="category.description" destination="content" before="-" />
+        <move element="copyright" destination="before.body.end"/>
+        <referenceBlock name="footer_links" remove="true" />        
+        <referenceContainer name="page.bottom">
+               <block class="Magento\Cms\Block\Block" name="footer">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">footer</argument>
+                    </arguments>
+                </block>
+            </referenceContainer>
+        <referenceContainer name="sidebar.main">
+           <block class="Magento\Cms\Block\Block" name="side_column_banner">
+               <arguments>
+                    <argument name="block_id" xsi:type="string">side_column_banner</argument>
+               </arguments>
+           </block>
+        </referenceContainer>
+        <referenceContainer name="product.info.social">
+           <block class="Magento\Cms\Block\Block" name="social_media">
+               <arguments>
+                    <argument name="block_id" xsi:type="string">social_media</argument>
+               </arguments>
+           </block>
+        </referenceContainer>
+    </body>
+</page>
+
+

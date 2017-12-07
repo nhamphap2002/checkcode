@@ -1,0 +1,26 @@
+<?php
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+?>
+<?php
+/**
+ * Top menu for store
+ *
+ * @see \Magento\Theme\Block\Html\Topmenu
+ */
+?>
+<?php $columnsLimit = $block->getColumnsLimit() ?: 0; ?>
+<?php $_menu = $block->getHtml('level-top', 'submenu', $columnsLimit) ?>
+
+<nav class="navigation" data-spy="affix" data-offset-top="175" data-offset-bottom="200" role="navigation">
+<div class="affix-wrapper">
+    <ul data-mage-init='{"menu":{"responsive":true, "expanded":true, "position":{"my":"left top","at":"left bottom"}}}'>
+        <?php /* @escapeNotVerified */ echo $_menu; ?>
+    </ul>
+</div>
+</nav>
